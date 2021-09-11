@@ -23,6 +23,8 @@
     <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom shadow-sm">
       <h5 class="my-0 mr-md-auto font-weight-normal">
         <a href="{% url 'home' %}">DjangoX</a>
+        <a class="px-4 hover:bg-gray-700" href="{% url 'snack_list' %}">Snack List</a>
+        <a class="px-4 hover:bg-gray-700" href="{% url 'create_snack' %}">Create Snack</a>
       </h5>
       <a class="p-2 text-dark" href="{% url 'about' %}">About</a>
       <nav class="my-2 my-md-0 mr-md-3">
@@ -55,9 +57,9 @@
     {% endblock content %}
   </div>
 
-  <footer class="footer">
+  <footer class="footer text-center">
     <div class="container">
-      <span class="text-muted">Footer...</span>
+      <span class="text-muted ">&copy; Yousef Abu-Jalboush</span>
     </div>
   </footer>
 
